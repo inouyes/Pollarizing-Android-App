@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/recvImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@+id/recvText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/recvImage">
+        <TextView
+            android:id="@+id/upPercent"
+            android:layout_gravity="top|center_horizontal"
+            android:text="50%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#11FF11"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/downPercent"
+            android:text="50%"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_below="@+id/recvText"
+        android:orientation="vertical"
+        android:id="@+id/commentsBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
